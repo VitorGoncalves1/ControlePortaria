@@ -1,0 +1,32 @@
+Comando upload git 
+
+git init
+
+git add .
+
+git commit -m ""
+
+ssh-keygen -t rsa -C "vagcavaco@sga.pucminas.br" //Colocar o e-mail vinculado ao github
+
+eval "$(ssh-agent -s)"//Chave para gerar o pid
+
+notepad ~/.ssh/id_rsa.pub //Chave para copiar no ssh do github
+
+ssh -T git@github.com //Autenticar github
+
+git remote -v //Verificar se ja existe algum vinculo de git no remoto
+
+git remote add origin git@github.com:VitorGoncalves1/ControlePortaria.git //Adicionar uma conexão remota com git com o ssh 
+
+git remote rm origin //Para remover o remote que ja existe 
+
+git brach  //verificar as branchs existentes 
+
+git branch nome da branch  //Criar uma nova branch 
+
+git push -u origin //Upar projeto para o git 
+
+git checkout nome da brach  -  alternar de branch 
+
+git checkout <sua-branch>    # troca de branch
+git pull origin <sua-branch> # puxa as alterações da branch no remoto origin - Quando emitir a mensagem failed to push some refs [fechada]
