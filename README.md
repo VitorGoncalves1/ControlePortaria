@@ -20,7 +20,7 @@ For the legacy Bootstrap 3 version of this theme, you can view the [last stable 
 
 ## Download and Installation
 
-To begin using this template, choose one of the following options to get started:
+Alteração de arquivo
 
 * [Download the latest release on Start Bootstrap](https://startbootstrap.com/theme/sb-admin-2/)
 * Install via npm: `npm i startbootstrap-sb-admin-2`
