@@ -30,3 +30,5 @@ git checkout nome da brach  -  alternar de branch
 
 git checkout <sua-branch>    # troca de branch
 git pull origin <sua-branch> # puxa as alterações da branch no remoto origin - Quando emitir a mensagem failed to push some refs [fechada]
+
+control+shift+p e digitar clone no vscode, posteriomente colocar a url do projeto no git hub
