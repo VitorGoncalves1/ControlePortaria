@@ -32,3 +32,12 @@ git checkout <sua-branch>    # troca de branch
 git pull origin <sua-branch> # puxa as alterações da branch no remoto origin - Quando emitir a mensagem failed to push some refs [fechada]
 
 control+shift+p e digitar clone no vscode, posteriomente colocar a url do projeto no git hub
+ou
+
+git clone <link/url do repositorio> //Para clonar o repositorio
+
+git pull //Atualizar repositorio remoto 
+
+git log --online //se mostrará a informação do commit de uma maneira mais resumida
+
+git log //Visualize o histórico de commits com o seguinte comando

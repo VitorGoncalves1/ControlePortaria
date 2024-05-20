@@ -14,7 +14,7 @@ Sistema utilizado para controlar acesso de terceiro, visitantes e gestores na em
 Pensado com o intuito de substituir planilhas de excel utilizadas na portaria dentro de empresa, esse sistema foi automatizado com base nas planilhas utilizadas pelos funcionários, em questão.
 
 
-* Importar a base sql 
+* Importar a base sql (portariateste.sql) 
 * Acima do PHP7.3
 
 ## Copyright and License
