@@ -32,20 +32,18 @@
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
+               
+                <div class="sidebar-brand-text mx-3"> 
+                <img src="img/logo.png" height="65px">
                 </div>
-                <div class="sidebar-brand-text mx-3">Projeto Portaria<sup>2</sup></div>
             </a>
 
-            <!-- Divider -->
-            <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
                 <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
+                    <span>Opções</span></a>
             </li>
 
             <!-- Divider -->
@@ -78,7 +76,7 @@
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
                     aria-expanded="true" aria-controls="collapsePages">
-                    <i class="fas fa-fw fa-folder"></i>
+                    <i class="fas fa-fw fa-cog"></i>
                     <span>Entrada e Saída</span>
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
@@ -95,43 +93,44 @@
           <!-- Divider -->
           <hr class="sidebar-divider">
 
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFour"
+                    aria-expanded="true" aria-controls="collapseFour">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Controle de Expedição</span>
+                </a>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Custom Components:</h6>
+                        <a class="collapse-item" href="expedicao/cadastroExpedicao.php">Controle de Expedição</a>
+                    </div>
+                </div>
+            </li>
 
           <!-- Nav Item - Pages Collapse Menu -->
-          <li class="nav-item">
-              <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree"
-                  aria-expanded="true" aria-controls="collapseTwo">
-                  <i class="fas fa-fw fa-cog"></i>
-                  <span>Visualizar</span>
-              </a>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
-                  <div class="bg-white py-2 collapse-inner rounded">
-                      <h6 class="collapse-header">Custom Components:</h6>	
-                      <a class="collapse-item" href="visualizar/visualizarVisitante.php">Visitante/Terceiro</a>
-                      <a class="collapse-item" href="visualizar/visualizarExpedicao.php">Expedição</a>
-					  <a class="collapse-item" href="visualizar/visualizarExpedicao.php">Gestor</a>
-                     
-                  </div>
-              </div>
-          </li>
+       
 
           <hr class="sidebar-divider">
 
 
-          <!-- Nav Item - Pages Collapse Menu -->
+        
           <li class="nav-item">
-              <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFour"
-                  aria-expanded="true" aria-controls="collapseFour">
-                  <i class="fas fa-fw fa-cog"></i>
-                  <span>Outros</span>
-              </a>
-              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionSidebar">
-                  <div class="bg-white py-2 collapse-inner rounded">
-                      <h6 class="collapse-header">Custom Components:</h6>
-                      <a class="collapse-item" href="expedicao/cadastroExpedicao.php">Controle de Expedição</a>
-                  </div>
-              </div>
-          </li>
-
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree"
+                aria-expanded="true" aria-controls="collapseTwo">
+                <i class="fas fa-fw fa-cog"></i>
+                <span>Visualizar</span>
+            </a>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <h6 class="collapse-header">Custom Components:</h6>	
+                    <a class="collapse-item" href="visualizar/visualizarVisitante.php">Visitante/Terceiro</a>
+                    <a class="collapse-item" href="visualizar/visualizarExpedicao.php">Expedição</a>
+                    <a class="collapse-item" href="visualizar/visualizarTerceiro.php">Gestor</a>
+                   
+                </div>
+            </div>
+        </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
@@ -164,7 +163,7 @@
                     <form
                         class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Procurar por"
                                 aria-label="Search" aria-describedby="basic-addon2">
                             <div class="input-group-append">
                                 <button class="btn btn-primary" type="button">

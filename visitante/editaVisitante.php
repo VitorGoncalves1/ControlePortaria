@@ -35,7 +35,7 @@ if (count($_POST) > 0) {
     <div class="wrapper fadeInDown">
     <div id="formContent">
       <div class="fadeIn first">
-        <img src="../logo2.jpg" id="icon" alt="acoforja" />
+        <img src="../img/logo2.jpg" id="icon" alt="acoforja" />
 
         
         <?php 

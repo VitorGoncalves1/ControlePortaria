@@ -26,61 +26,34 @@ include('../conexao.php');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" id="bootstrap-css" />
+    <title>Visualizar Gestor</title>
+    <link rel="stylesheet" href="../css/tabela.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 </head>
+<body>
 
 <center>
-<body>
-
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        table {
-            font-family: Arial, sans-serif;
-            border-collapse: collapse;
-            width: 50%;
-            margin-top: 20px;
-        }
-
-        th, td {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
-
-        th {
-            background-color: #f2f2f2;
-        }
-
-        tr:hover {
-            background-color: #f5f5f5;
-        }
-    </style>
-</head>
-<body>
-
 
 <form action="" method="post">
 
-<p>Informe a data inicio</p>
-<input type="date" name="dataI">
+<div class="form-group w-25 p-1">
+            <label>DATA INÍCIO</label>
+            <input type="date" class="form-control " name="dataI">
+        </div>
+<div class="form-group w-25 p-1">
+            <label>DATA FINAL</label>
+            <input type="date" class="form-control" name="dataF" >
+        </div>
 
-<p>Informe a data Final</p>
-<input type="date" name="dataF">
-
-<input type="submit" value="Enviar">
+        <button type="submit" class="btn btn-primary">Enviar</button>
 
 </form>
 
     <table>
         <thead>
             <tr>
-                <th>Nome</th>
-                <th>Data</th>
+                <th>NOME</th>
+                <th>DATA</th>
                 <th>CPF</th>
                 <th>Modelo</th>
                 <th>Hora Entrada</th>
@@ -136,7 +109,7 @@ include('../conexao.php');
             
             ?>
     </table>
-<a href="index.php">Voltar</a>
+<a href="../index.html">Voltar</a>
 </body>
 </html>
 

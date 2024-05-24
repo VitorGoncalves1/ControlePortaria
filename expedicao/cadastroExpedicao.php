@@ -12,8 +12,9 @@ if (count($_POST) > 0) {
     $visto = $_POST['visto'];
     $observacao = $_POST['observacao'];
     $data  =  $_POST['data'];
+    $placa  = $_POST['placa'];
 
-    $sql_expedicao = "INSERT INTO expedicao(op,pecas,volume,notafisc,hora,visto,observacoes,data) VALUES ('$op','$pecas','$volume','$notafisc','$hora','$visto','$observacao','$data') ";
+    $sql_expedicao = "INSERT INTO expedicao(op,pecas,volume,notafisc,hora,visto,observacoes,data, placa) VALUES ('$op','$pecas','$volume','$notafisc','$hora','$visto','$observacao','$data', '$placa') ";
     $query_expedicao = $mysqli->query($sql_expedicao) or die("Não foi possivel cadastrar" . $mysqli->error);
 
     if ($query_expedicao) {
@@ -27,7 +28,7 @@ if (count($_POST) > 0) {
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head>  
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -68,6 +69,10 @@ if (count($_POST) > 0) {
             <input type="time" class="form-control" name="hora">
         </div>
         <div class="form-group w-25 p-3">
+            <label>PLACA VEICULO</label>
+            <input type="text" class="form-control" name="placa">
+        </div>
+        <div class="form-group w-25 p-3">
             <label>VISTO PORTARIA</label>
             <input type="text" class="form-control" name="visto">
         </div>
@@ -75,7 +80,7 @@ if (count($_POST) > 0) {
             <label>OBSERVACOES</label>
             <input type="text" class="form-control" name="observacao">
         </div>
-
+    
         <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
         <br><br>
