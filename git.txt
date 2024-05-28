@@ -41,3 +41,8 @@ git pull //Atualizar repositorio remoto
 git log --online //se mostrará a informação do commit de uma maneira mais resumida
 
 git log //Visualize o histórico de commits com o seguinte comando
+
+git config --global user.email "email@example.com"//Caso nao consiga das push no remoto 
+
+Geralmente o VSCode usa as credenciais do github do gerenciador de credenciais do sistema, ele não armazena em qualquer lugar nas configurações. Então experimente pesquisar ou ir até o gerenciador de credenciais (painel de controle do Windows) -> Credenciais do Windows -> Atualize a senha do GitHub na lista.
+
