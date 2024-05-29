@@ -59,8 +59,8 @@ if ($num_clientes==0){
         <td><?php echo $visualizar['placa'];?></td>
         <td><?php echo $visualizar['hora_entrada'];?></td>
         <td><?php echo $visualizar['hora_saida'];?></td>
-        <td><?php echo $visualizar['hora_entrada2'];?></td>
-        <td><?php echo $visualizar['hora_saida2'];?></td>
+        <td><?php if($visualizar['hora_entrada2']==='00:00:00') echo 'Horario não cadastrado'; else echo $visualizar['hora_entrada2'];?></td>
+        <td><?php if($visualizar['hora_saida2']==='00:00:00') echo 'Horario não cadastrado'; else echo $visualizar['hora_saida2'];?></td>
         <td><a href="../horaVisitante.php?cpf=<?php echo $visualizar['cpf'];?>">Editar</a></td>
         
     </tr>

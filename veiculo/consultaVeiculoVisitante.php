@@ -2,12 +2,14 @@
 
 include '../conexao.php';
 
-$sql_veiculo = "SELECT * FROM visitantes";
-$query_veiculo = $mysqli->query($sql_veiculo) or die($mysqli->error);
+if(count($_POST)>0){
+    
+    $nome  = $_POST['nome']; 
+    $sql_veiculo = "SELECT * FROM visitantes where nome LIKE  '%$nome%'";
+    $query_veiculo = $mysqli->query($sql_veiculo) or die($mysqli->error);
 
+}
 ?>
-
-
 
 
 <!DOCTYPE html>
@@ -24,6 +26,15 @@ $query_veiculo = $mysqli->query($sql_veiculo) or die($mysqli->error);
 
 <h1>Consulta de Usuários</h1>
 
+<form method="post">
+
+    <p>Informe o nome</p>
+    <input type="text" name="nome">
+
+    <input type="submit" value="Enviar">
+
+</form>
+<br>
 <table border = '1' cellspadding = '3' >
     <thead >
         <tr>
@@ -32,7 +43,7 @@ $query_veiculo = $mysqli->query($sql_veiculo) or die($mysqli->error);
         </tr>
     </thead>
     
-    <?php while ($visualizar = $query_veiculo->fetch_assoc()) { ?>
+    <?php if(count($_POST)>0) while ($visualizar = $query_veiculo->fetch_assoc()) { ?>
     
     <tbody>
         <tr>   

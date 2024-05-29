@@ -36,7 +36,7 @@ else {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro Terceiro</title>
+    <title>Cadastro Gestor</title>
     <link rel="stylesheet" href="../css/style.css" id="bootstrap-css" >
 </head>
 <body>
@@ -68,7 +68,7 @@ else {
           <input type="submit" class="fadeIn fourth" value="CADASTRAR">
           <br>
 
-          <a href="../veiculo/veiculoTerceiro.php">
+          <a href="../veiculo/veiculoGestor.php">
           <p style  = "color: red; font-size: 13px;">POSSUI VEICULO?</p>  
         </a>
           <a href="../index.html">

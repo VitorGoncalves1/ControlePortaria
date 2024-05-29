@@ -75,7 +75,7 @@ if (count($_POST) > 0) {
                     <p style="color: red; font-size: 13px;">VOLTAR</p>
                 </a>
 
-                <a href="consultaVeiculoTerceiro.php">Consultar CPF usuários</a>
+                <a href="consultaVeiculoGestor.php">Consultar CPF usuários</a>
             </form>
 
 

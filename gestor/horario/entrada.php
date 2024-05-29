@@ -50,9 +50,12 @@ else {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar Horario</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 </head>
 <body>
  
+<center>
+
 <form action="" method="POST">
 
 <?php
@@ -81,25 +84,33 @@ echo "</select>";
 
 if($cont2==0){
     echo "<script> alert('Não possui nenhum veiculo cadastrado com esse cpf'); 
-            window.location.href = '../../veiculo/veiculoTerceiro.php'; </script>";
+            window.location.href = '../../veiculo/veiculoGestor.php'; </script>";
 }
 
 ?>
 
 
-<p>Informe a data</p>
-<input type="date" name="data" >
+<a href="../../veiculo/veiculoGestor.php">Cadastrar Veiculo?</a>
 
-<p>Informe a hora de entrada</p>
-<input type="time" name="hora">
+<div class="form-group w-25 p-3">
+    <label>INFORME A DATA</label>
+    <input type="date" class="form-control" name="data">
+</div>
+<div class="form-group w-25 p-3">
+    <label>INFORME A HORA ENTRADA</label>
+    <input type="time" class="form-control" name="hora">
+</div>
 
-<br><br>
-<input type="submit" value="Enviar">
+
+<button type="submit" class="btn btn-primary">Enviar</button>
 </form>
+<br><br>
+<a href="../../index.html">Tela Inicio</a>
 
+</center>
 
 </body>
 
-<a href="../index.html">Tela Inicio</a>
+
 
 </html>

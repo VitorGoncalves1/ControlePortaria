@@ -106,7 +106,7 @@ echo "</select>";
 <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
 <br><br>
-<a href="../index.html">Voltar</a>
+
 <a href="../../index.html">Tela Inicio</a>
 
 </center>

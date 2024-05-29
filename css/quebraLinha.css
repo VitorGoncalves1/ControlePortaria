@@ -1,0 +1,6 @@
+.tabela td {
+    width: 200px; /* Largura máxima do contêiner */
+    padding: 10px;
+    word-wrap: break-word; /* Força a quebra de palavras longas */
+    word-break: break-all; /* Força a quebra de palavras longas */
+}

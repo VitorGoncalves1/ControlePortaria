@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>PROJETO PORTARIA</title>
+    <title>Controle Portaria</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -19,6 +19,7 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/quebraLinha.css">
 
 </head>
 
@@ -32,9 +33,9 @@
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-               
-                <div class="sidebar-brand-text mx-3"> 
-                <img src="img/logo.png" height="65px">
+
+                <div class="sidebar-brand-text mx-3">
+                    <img src="img/logo.png" height="65px">
                 </div>
             </a>
 
@@ -61,16 +62,16 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Custom Components:</h6>
                         <a class="collapse-item" href="visitante/cadastroVisitante.php">Visitante/Terceiro</a>
-                        <a class="collapse-item" href="terceiro/cadastroTerceiro.php">Gestor</a>
+                        <a class="collapse-item" href="gestor/cadastroGestor.php">Gestor</a>
                     </div>
                 </div>
             </li>
-    
+
 
             <!-- Divider -->
             <hr class="sidebar-divider">
 
-        
+
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
@@ -83,15 +84,15 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Opções</h6>
                         <a class="collapse-item" href="visitante/editaVisitante.php">Visitante/Terceiro</a>
-                        <a class="collapse-item" href="terceiro/editaTerceiro.php">Gestor</a>
+                        <a class="collapse-item" href="gestor/editaGestor.php">Gestor</a>
                         <div class="collapse-divider"></div>
-                
+
                     </div>
                 </div>
             </li>
 
-          <!-- Divider -->
-          <hr class="sidebar-divider">
+            <!-- Divider -->
+            <hr class="sidebar-divider">
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
@@ -108,29 +109,29 @@
                 </div>
             </li>
 
-          <!-- Nav Item - Pages Collapse Menu -->
-       
-
-          <hr class="sidebar-divider">
+            <!-- Nav Item - Pages Collapse Menu -->
 
 
-        
-          <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree"
-                aria-expanded="true" aria-controls="collapseTwo">
-                <i class="fas fa-fw fa-cog"></i>
-                <span>Visualizar</span>
-            </a>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Custom Components:</h6>	
-                    <a class="collapse-item" href="visualizar/visualizarVisitante.php">Visitante/Terceiro</a>
-                    <a class="collapse-item" href="visualizar/visualizarExpedicao.php">Expedição</a>
-                    <a class="collapse-item" href="visualizar/visualizarTerceiro.php">Gestor</a>
-                   
+            <hr class="sidebar-divider">
+
+
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Visualizar</span>
+                </a>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Custom Components:</h6>
+                        <a class="collapse-item" href="visualizar/visualizarVisitante.php">Visitante/Terceiro</a>
+                        <a class="collapse-item" href="visualizar/visualizarExpedicao.php">Expedição</a>
+                        <a class="collapse-item" href="visualizar/visualizarGestor.php">Gestor</a>
+
+                    </div>
                 </div>
-            </div>
-        </li>
+            </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
@@ -140,7 +141,7 @@
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
 
-          
+
 
         </ul>
         <!-- End of Sidebar -->
@@ -200,9 +201,9 @@
                             </div>
                         </li>
 
-                        
 
-                    
+
+
 
                         <div class="topbar-divider d-none d-sm-block"></div>
 
@@ -211,8 +212,7 @@
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Usuário TI</span>
-                                <img class="img-profile rounded-circle"
-                                    src="img/undraw_profile.svg">
+                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -248,13 +248,14 @@
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Página Inicial</h1>
-                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                        <a href="error/reportError.php"
+                            class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Reportar Erro</a>
                     </div>
 
-                 
 
-                  
+
+
 
                     <!-- Content Row -->
                     <div class="row">
@@ -272,7 +273,8 @@
                                         <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;"
                                             src="img/undraw_posting_photo.svg" alt="...">
                                     </div>
-                                    <p>Site criado com o intuito de automatizar processos de entrada e saída de pessoas na portaria</p>
+                                    <p>Site criado com o intuito de automatizar processos de entrada e saída de pessoas
+                                        na portaria</p>
                                     <a target="_blank" rel="nofollow" href="https://undraw.co/">Video Informativo</a>
                                 </div>
                             </div>
@@ -284,10 +286,42 @@
                                 </div>
                                 <div class="card-body">
                                     <p>Segue o procedimento para acessar as funcionalidades do site</p>
-                                   
+
                                 </div>
                             </div>
 
+                        </div>
+
+                        <div class="card shadow mb-1 float-right">
+                            <div class="card-header py-3">
+                                <h6 class="m-0 font-weight-bold text-primary">Erros Aprentados</h6>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+
+                                            <th scope="col">Tela</th>
+                                            <th scope="col">Erro</th>
+
+                                    </thead>
+                                    <tbody>
+                                        <tr class="tabela">
+
+                                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+                                                voluptatem reiciendis! Deserunt ex adipisci consectetur libero, repellat
+                                                fuga vitae cupiditate fugit fugiat eveniet eius possimus! Quae totam
+                                                atque rem culpa?</td>
+                                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+                                                inventore sunt accusantium ratione beatae provident, doloremque placeat
+                                                tempore omnis, corrupti nulla, quod suscipit nemo cupiditate quis
+                                                recusandae minima mollitia distinctio?</td>
+
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
 
